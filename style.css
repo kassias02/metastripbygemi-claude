@@ -1,0 +1,1072 @@
+/*---------------------- style.css ----------------------*/
+:root {
+    --background-color: #1a1a1e; /* Dark background */
+    --text-color: #e0e0e0;       /* Light grey text */
+    --primary-color: #8a2be2;   /* Purple accent (BlueViolet) */
+    --secondary-color: #2a2a2e; /* Slightly lighter dark for elements */
+    --border-color: var(--primary-color);
+    --button-text-color: #ffffff;
+    --error-color: #ff6b6b;
+    --success-color: #6bcb77;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-top: 60px; /* Space for the fixed banner */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed; /* Keep banner fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color); /* Ensure it has background */
+    z-index: 10;
+}
+
+.support-banner {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.support-banner a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.support-banner a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+h1 {
+    color: var(--text-color);
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    color: var(--text-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+h3 {
+    color: var(--text-color);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    color: #a0a0a0;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#drop-zone {
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    text-align: center;
+}
+
+#drop-zone p {
+    margin-bottom: 0.5em;
+    color: #b0b0b0;
+}
+
+#drop-zone.dragover {
+    background-color: #3a3a3e;
+    border-color: #a0a0a0;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+button:active {
+     transform: scale(0.98);
+}
+
+#select-button {
+    margin-top: 10px;
+}
+
+.status {
+    margin-bottom: 20px;
+    min-height: 1.5em; /* Reserve space */
+    font-weight: 500;
+    text-align: center;
+}
+.status.error {
+    color: var(--error-color);
+}
+.status.success {
+    color: var(--success-color);
+}
+
+
+#results {
+    margin-top: 30px;
+    text-align: left;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#results h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.image-preview-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#image-preview {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 4px;
+    object-fit: contain; /* Preserve aspect ratio */
+}
+
+#metadata-output {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--background-color); /* Slightly darker background */
+    color: var(--text-color);
+    padding: 15px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    max-height: 400px; /* Limit height and make scrollable */
+    overflow-y: auto;
+    font-size: 0.9em;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+}
+
+/* New styles for info section */
+.info-section, .faq-section {
+    margin-top: 40px;
+    background-color: var(--secondary-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.info-section h2, .faq-section h2 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.info-section ul, .info-section ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info-section ul li, .info-section ol li {
+    margin-bottom: 8px;
+}
+
+/* FAQ styles */
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: var(--text-color);
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    padding-left: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav {
+    margin-top: 15px;
+}
+
+footer nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding-top: 50px; /* Adjust for potentially smaller banner */
+    }
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    #drop-zone {
+        padding: 30px 15px;
+    }
+    .support-banner {
+        font-size: 0.8em;
+        padding: 4px 8px;
+        right: 10px;
+        top: 8px;
+    }
+    .actions {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+    .info-section, .faq-section {
+        padding: 15px;
+    }
+}
+
+/* Add these styles to your existing style.css file */
+
+/* Container for centered content */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation styles */
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+/* Legal page specific styles */
+.legal-page {
+    padding: 60px 0;
+}
+
+.legal-page h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.last-updated {
+    text-align: center;
+    color: #a0a0a0;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.legal-page section {
+    margin-bottom: 30px;
+    background-color: var(--secondary-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.legal-page h2 {
+    color: var(--text-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.legal-page h3 {
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.legal-page p, .legal-page ul, .legal-page ol {
+    margin-bottom: 15px;
+}
+
+.legal-page ul, .legal-page ol {
+    padding-left: 20px;
+}
+
+.legal-page li {
+    margin-bottom: 8px;
+}
+
+.legal-page a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.legal-page a:hover {
+    text-decoration: underline;
+}
+
+/* Enhanced footer styles */
+footer {
+    background-color: var(--secondary-color);
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-logo h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.footer-logo p {
+    color: #a0a0a0;
+}
+
+.footer-links h4, .footer-support h4 {
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.support-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.support-button:hover {
+    filter: brightness(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+    color: #a0a0a0;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    .main-nav ul {
+        gap: 15px;
+    }
+    
+    .support-banner {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 15px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-links, .footer-support {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .legal-page section {
+        padding: 15px;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* Additional styles for the enhanced website 
+   Add these to your style.css file */
+
+/* General Layout Styles */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navigation Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 0 60px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #9c55d4, #6a0dad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #b0b0b0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background-color: rgba(42, 42, 46, 0.3);
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Tool Section Modifications */
+.tool-section {
+    padding: 60px 0;
+}
+
+.tool-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+/* Info Section Styling */
+.info-section, .faq-section {
+    padding: 60px 0;
+    background-color: rgba(42, 42, 46, 0.3);
+}
+
+.info-section h2, .faq-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.info-section ul, .faq-section ul {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.info-section li, .faq-section li {
+    margin-bottom: 10px;
+}
+
+.faq-item {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--secondary-color);
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-logo h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.footer-logo p {
+    color: #a0a0a0;
+}
+
+.footer-links h4, .footer-support h4 {
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.support-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.support-button:hover {
+    filter: brightness(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+    color: #a0a0a0;
+    font-size: 0.9em;
+}
+
+/* About Page Styles */
+.about-page {
+    padding: 60px 0;
+}
+
+.about-page h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    flex: 1 1 600px;
+}
+
+.about-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.features-section {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.features-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature {
+    padding: 20px;
+    background-color: rgba(26, 26, 30, 0.5);
+    border-radius: 8px;
+}
+
+.feature h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.future-plans, .support-section {
+    margin-bottom: 40px;
+}
+
+.future-plans h2, .support-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.future-plans ul, .support-section ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.future-plans li, .support-section li {
+    margin-bottom: 10px;
+}
+
+/* Contact Page Styles */
+.contact-page {
+    padding: 60px 0;
+}
+
+.contact-page h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-option {
+    flex: 1 1 300px;
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-option h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.contact-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    filter: brightness(1.1);
+}
+
+.contact-form-section {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.contact-form-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    background-color: rgba(26, 26, 30, 0.7);
+    color: var(--text-color);
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.submit-button:hover {
+    filter: brightness(1.1);
+}
+
+.faq-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.faq-link h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.faq-link p {
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    .main-nav ul {
+        gap: 15px;
+    }
+    
+    .support-banner {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 15px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-links, .footer-support {
+        width: 100%;
+    }
+    
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 40px 0 30px;
+    }
+    
+    .features, .info-section, .faq-section, .tool-section {
+        padding: 40px 0;
+    }
+    
+    .contact-options, .contact-form-section {
+        padding: 20px;
+    }
+    
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

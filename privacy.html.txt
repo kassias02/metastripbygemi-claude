@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'none'; script-src 'self' https://plausible.io; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; form-action 'none';">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Privacy policy for MetaStrip, the free online EXIF metadata viewer and remover tool. Learn how we protect your data.">
+    <meta name="keywords" content="privacy policy, EXIF, metadata, privacy, data protection">
+    
+    <title>Privacy Policy | MetaStrip</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Analytics (Privacy-Focused) -->
+    <script async defer data-domain="metastrip.com" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">MetaStrip</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#tool">Tool</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="support-banner">
+            <a href="https://buymeacoffee.com/takewadit2s?status=1" target="_blank" rel="noopener noreferrer">+ Support this project →</a>
+        </div>
+    </header>
+
+    <main class="legal-page">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: April 04, 2025</p>
+            
+            <section>
+                <h2>1. Introduction</h2>
+                <p>Welcome to MetaStrip ("we," "our," or "us"). Your privacy is critically important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website <a href="https://www.metastrip.com">www.metastrip.com</a> (the "Service").</p>
+                <p>We do not collect personal information through our Service except as described in this Privacy Policy. Please read this Privacy Policy carefully. By using the Service, you agree to the practices described in this Privacy Policy.</p>
+            </section>
+            
+            <section>
+                <h2>2. Information We Process</h2>
+                
+                <h3>2.1 Image Processing</h3>
+                <ul>
+                    <li><strong>Local Processing Only</strong>: All image processing (viewing and removing EXIF metadata) occurs entirely within your browser.</li>
+                    <li><strong>No Server Uploads</strong>: Your images are never uploaded to our servers or stored in any way by our Service.</li>
+                    <li><strong>No Image Retention</strong>: We do not retain, collect, or store any images processed through our Service.</li>
+                </ul>
+                
+                <h3>2.2 Analytics Information</h3>
+                <p>We use Plausible Analytics, a privacy-focused analytics service, to collect minimal anonymous usage data that helps us improve our Service:</p>
+                <ul>
+                    <li><strong>Page views</strong>: Which pages on our website are visited</li>
+                    <li><strong>Referral sources</strong>: How visitors find our website</li>
+                    <li><strong>Device information</strong>: Browser type, operating system, and screen size</li>
+                    <li><strong>Country-level location</strong>: Determined from anonymized IP addresses</li>
+                </ul>
+                
+                <p><strong>Important</strong>: Plausible Analytics is configured to respect your privacy:</p>
+                <ul>
+                    <li>IP addresses are not stored</li>
+                    <li>No cookies are used</li>
+                    <li>No personal information is collected</li>
+                    <li>No cross-site tracking occurs</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>3. How We Use Information</h2>
+                <p>We use the analytics information solely to:</p>
+                <ul>
+                    <li>Understand how users interact with our Service</li>
+                    <li>Analyze which features are most useful</li>
+                    <li>Identify technical issues</li>
+                    <li>Improve the usability and performance of our Service</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>4. Data Sharing and Disclosure</h2>
+                <p>We do not sell, trade, or otherwise transfer your information to third parties. The anonymized analytics data we collect is:</p>
+                <ul>
+                    <li>Accessible only to necessary personnel for the purposes stated above</li>
+                    <li>Never shared with or sold to third parties for marketing purposes</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>5. Your Data Protection Rights</h2>
+                <p>Depending on your location, you may have certain rights regarding your personal information:</p>
+                <ul>
+                    <li><strong>Right to Access</strong>: Request a copy of the information we have about you.</li>
+                    <li><strong>Right to Rectification</strong>: Request correction of information you believe is inaccurate.</li>
+                    <li><strong>Right to Erasure</strong>: Request that we delete information about you.</li>
+                    <li><strong>Right to Restrict Processing</strong>: Request that we limit the processing of your information.</li>
+                    <li><strong>Right to Data Portability</strong>: Request transfer of your information to another organization.</li>
+                    <li><strong>Right to Object</strong>: Object to our processing of your personal information.</li>
+                </ul>
+                
+                <p>Since we process minimal personal information, many of these rights may not apply to our Service. If you wish to exercise any of these rights, please contact us using the information provided at the end of this Privacy Policy.</p>
+            </section>
+            
+            <section>
+                <h2>6. Cookies and Similar Technologies</h2>
+                <p>Our Service uses only essential cookies necessary for the operation of the website. We do not use tracking cookies, advertising cookies, or any cookies that collect personal information.</p>
+                <p><strong>Plausible Analytics</strong>, our analytics provider, operates without cookies and without collecting personal data.</p>
+            </section>
+            
+            <section>
+                <h2>7. Third-Party Links</h2>
+                <p>Our Service may contain links to third-party websites that are not operated by us. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services. We strongly advise you to review the privacy policy of every site you visit.</p>
+            </section>
+            
+            <section>
+                <h2>8. Children's Privacy</h2>
+                <p>Our Service is not directed to anyone under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.</p>
+            </section>
+            
+            <section>
+                <h2>9. Changes to This Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+                <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            </section>
+            
+            <section>
+                <h2>10. Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul>
+                    <li>Email: <a href="mailto:privacy@metastrip.com">privacy@metastrip.com</a></li>
+                    <li><a href="contact.html">Contact Form</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>MetaStrip</h3>
+                    <p>Privacy-focused EXIF metadata viewer and remover</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <h4>Support Us</h4>
+                    <a href="https://buymeacoffee.com/takewadit2s?status=1" class="support-button" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MetaStrip. All rights reserved.</p>
+                <p>This tool processes all images locally in your browser. No data is ever uploaded to our servers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

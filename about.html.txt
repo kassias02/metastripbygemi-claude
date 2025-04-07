@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'none'; script-src 'self' https://plausible.io; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; form-action 'none';">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn about MetaStrip, a free online tool to view and remove EXIF metadata from JPEG images. Our mission is to protect your privacy online.">
+    <meta name="keywords" content="EXIF, metadata, photo privacy, about MetaStrip, image privacy tool">
+    
+    <title>About | MetaStrip</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Analytics (Privacy-Focused) -->
+    <script async defer data-domain="metastrip.com" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">MetaStrip</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="support-banner">
+            <a href="https://buymeacoffee.com/takewadit2s?status=1" target="_blank" rel="noopener noreferrer">+ Support this project →</a>
+        </div>
+    </header>
+
+    <main class="about-page">
+        <div class="container">
+            <section class="about-intro">
+                <h1>About MetaStrip</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Mission</h2>
+                        <p>MetaStrip was created with one clear goal: to help people protect their privacy when sharing photos online. In a world where digital privacy is increasingly important, we wanted to provide a simple, free tool that removes hidden metadata from images without requiring technical knowledge.</p>
+                        
+                        <h2>Privacy-First Philosophy</h2>
+                        <p>We believe your data belongs to you. That's why MetaStrip processes everything locally in your browser. Your photos never leave your device, and we don't collect any personal information from you or your images.</p>
+                        
+                        <h2>The Problem We're Solving</h2>
+                        <p>Every time you take a photo with your smartphone or digital camera, it automatically embeds information like:</p>
+                        <ul>
+                            <li>The exact GPS coordinates where the photo was taken</li>
+                            <li>The date and time the photo was taken</li>
+                            <li>Details about your camera or smartphone model</li>
+                            <li>Technical settings used to take the photo</li>
+                            <li>Sometimes even your name or the serial number of your device</li>
+                        </ul>
+                        
+                        <p>When you share these photos online, all of this information goes with them, potentially exposing personal details about your life, habits, and location to anyone who knows how to extract this data.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="features-section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature">
+                        <h3>100% Private Processing</h3>
+                        <p>All processing happens in your browser. Your photos never leave your device, ensuring complete privacy.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>User-Friendly Interface</h3>
+                        <p>Simple drag-and-drop functionality makes it easy for anyone to use, regardless of technical expertise.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>Detailed Metadata Viewing</h3>
+                        <p>See exactly what information is embedded in your photos before deciding to remove it.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>Complete Metadata Removal</h3>
+                        <p>Strip all EXIF metadata with one click, giving you a clean image safe for sharing.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>Free to Use</h3>
+                        <p>MetaStrip is and always will be completely free to use. No registration required, no hidden fees.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>No Server Dependencies</h3>
+                        <p>The tool works entirely client-side, so you can even save it and use it offline if needed.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="future-plans">
+                <h2>Future Plans</h2>
+                <p>We're constantly working to improve MetaStrip. Some features we're planning to add include:</p>
+                <ul>
+                    <li>Support for additional image formats beyond JPEG</li>
+                    <li>Batch processing for multiple images</li>
+                    <li>Selective metadata removal (keeping copyright info while removing location data)</li>
+                    <li>Additional visualization options for location data</li>
+                    <li>Educational resources about metadata and digital privacy</li>
+                </ul>
+                <p>If you have suggestions for features you'd like to see, please <a href="contact.html">contact us</a>!</p>
+            </section>
+            
+            <section class="support-section">
+                <h2>Support MetaStrip</h2>
+                <p>MetaStrip is a passion project created to help protect privacy online. If you find it useful, please consider:</p>
+                <ul>
+                    <li>Supporting the project financially through <a href="https://buymeacoffee.com/takewadit2s?status=1" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a></li>
+                    <li>Sharing MetaStrip with friends and on social media</li>
+                    <li>Providing feedback to help us improve</li>
+                </ul>
+                <p>Your support helps us maintain and improve the tool while keeping it free for everyone.</p>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>MetaStrip</h3>
+                    <p>Privacy-focused EXIF metadata viewer and remover</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <h4>Support Us</h4>
+                    <a href="https://buymeacoffee.com/takewadit2s?status=1" class="support-button" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MetaStrip. All rights reserved.</p>
+                <p>This tool processes all images locally in your browser. No data is ever uploaded to our servers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

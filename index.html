@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'none'; script-src 'self' https://plausible.io; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; form-action 'none';">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Free online tool to view and remove EXIF metadata from JPEG images. Process images privately in your browser with no server uploads required.">
+    <meta name="keywords" content="EXIF, metadata, photo privacy, image metadata, JPEG, remove EXIF, privacy tool">
+    <meta name="author" content="MetaStrip">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metastrip.com/">
+    <meta property="og:title" content="MetaStrip - Free Online EXIF Metadata Viewer & Remover">
+    <meta property="og:description" content="Free tool to view and remove EXIF data from your photos. Protect your privacy by removing location, camera details, and other sensitive information.">
+    <meta property="og:image" content="https://metastrip.com/img/social-preview.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://metastrip.com/">
+    <meta name="twitter:title" content="MetaStrip - Free Online EXIF Metadata Viewer & Remover">
+    <meta name="twitter:description" content="Free tool to view and remove EXIF data from your photos. Protect your privacy by removing location, camera details, and other sensitive information.">
+    <meta name="twitter:image" content="https://metastrip.com/img/social-preview.jpg">
+    
+    <title>MetaStrip - Free EXIF Metadata Viewer & Remover</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Analytics (Privacy-Focused) -->
+    <script async defer data-domain="metastrip.com" src="https://plausible.io/js/plausible.js"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MetaStrip",
+      "description": "Free browser-based tool to view and remove metadata from JPEG images",
+      "operatingSystem": "Any",
+      "applicationCategory": "UtilityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
+    <script src="js/piexif.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">MetaStrip</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="support-banner">
+            <a href="https://buymeacoffee.com/takewadit2s?status=1" target="_blank" rel="noopener noreferrer">+ Support this project →</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>View & Remove Image Metadata</h1>
+                <p class="subtitle">Protect your privacy by removing hidden EXIF data from your photos. <br>Process JPEG images privately in your browser. No uploads required.</p>
+                <a href="#tool-section" class="cta-button">Remove Metadata Now</a>
+            </div>
+        </section>
+
+        <section id="tool-section" class="tool-section">
+            <div class="container">
+                <h2>Upload Your Image</h2>
+                
+                <div id="drop-zone">
+                    <p>Drag & drop your JPEG image here</p>
+                    <p>or</p>
+                    <button id="select-button" type="button">Select Image</button>
+                    <input type="file" id="file-input" accept="image/jpeg" hidden>
+                </div>
+
+                <div id="status-message" class="status"></div>
+
+                <div id="results" style="display: none;">
+                    <h2>Metadata Results</h2>
+                    <div class="image-preview-container">
+                        <img id="image-preview" alt="Selected image preview" src="#">
+                    </div>
+                    <pre id="metadata-output"></pre>
+                    <div class="actions">
+                        <button id="copy-button" type="button">Copy Metadata</button>
+                        <button id="delete-button" type="button">Download Image without Metadata</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Feature highlights section -->
+        <section class="features">
+            <div class="container">
+                <h2>Why Use MetaStrip?</h2>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Complete Privacy</h3>
+                        <p>Your photos never leave your device. All processing happens locally in your browser.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Processing</h3>
+                        <p>Instantly view and remove metadata with no waiting for uploads or server processing.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Protect Your Identity</h3>
+                        <p>Remove location data, device info, and other personal details before sharing photos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Info section (for SEO and user education) -->
+        <section class="info-section">
+            <div class="container">
+                <h2>What is EXIF Metadata?</h2>
+                <p>EXIF (Exchangeable Image File Format) metadata is information embedded in your photos that can include:</p>
+                <ul>
+                    <li><strong>Camera details</strong>: Make, model, lens information</li>
+                    <li><strong>Photo settings</strong>: Aperture, shutter speed, ISO, date/time</li>
+                    <li><strong>Location data</strong>: GPS coordinates showing exactly where the photo was taken</li>
+                    <li><strong>Device information</strong>: Software used, smartphone model, serial numbers</li>
+                    <li><strong>Thumbnail images</strong>: Small preview versions of the original photo</li>
+                </ul>
+                
+                <h2>Why Remove EXIF Data?</h2>
+                <p>Removing EXIF data from your photos before sharing them online helps protect your privacy by:</p>
+                <ul>
+                    <li>Preventing location tracking (removing GPS data)</li>
+                    <li>Hiding personal device information</li>
+                    <li>Protecting your identity when sharing photos publicly</li>
+                    <li>Reducing image file size for faster uploads</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>Is this tool completely free?</h3>
+                    <p>Yes, this tool is 100% free to use. If you find it helpful, you can support the project through the "Support this project" link.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Are my images safe when using this tool?</h3>
+                    <p>Absolutely. Your images are processed entirely in your browser and never uploaded to any server. The code runs locally on your device, ensuring complete privacy.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Which image formats are supported?</h3>
+                    <p>Currently, this tool supports JPEG images only, as they are the most common format containing EXIF metadata.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Will removing metadata affect image quality?</h3>
+                    <p>No, removing metadata only strips the extra information attached to the image file. The visual quality of your photo remains exactly the same.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Why can't I see all possible metadata types?</h3>
+                    <p>This tool focuses on extracting EXIF metadata specifically. Some advanced metadata types or file system information might not be accessible through browser-based JavaScript.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>MetaStrip</h3>
+                    <p>Privacy-focused EXIF metadata viewer and remover</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <h4>Support Us</h4>
+                    <a href="https://buymeacoffee.com/takewadit2s?status=1" class="support-button" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MetaStrip. All rights reserved.</p>
+                <p>This tool processes all images locally in your browser. No data is ever uploaded to our servers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

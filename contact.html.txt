@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'none'; script-src 'self' https://plausible.io; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; form-action 'none';">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact the MetaStrip team. Share feedback, ask questions, or report issues with our free EXIF metadata viewer and remover tool.">
+    <meta name="keywords" content="contact, feedback, EXIF tool, metadata remover, support">
+    
+    <title>Contact Us | MetaStrip</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Analytics (Privacy-Focused) -->
+    <script async defer data-domain="metastrip.com" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">MetaStrip</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="support-banner">
+            <a href="https://buymeacoffee.com/takewadit2s?status=1" target="_blank" rel="noopener noreferrer">+ Support this project →</a>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <div class="container">
+            <h1>Contact Us</h1>
+            
+            <section class="contact-options">
+                <div class="contact-option">
+                    <h2>Email Us</h2>
+                    <p>For general inquiries, feedback, or support:</p>
+                    <a href="mailto:contact@metastrip.com" class="contact-link">contact@metastrip.com</a>
+                    
+                    <p>For privacy-related questions:</p>
+                    <a href="mailto:privacy@metastrip.com" class="contact-link">privacy@metastrip.com</a>
+                </div>
+                
+                <div class="contact-option">
+                    <h2>Connect With Us</h2>
+                    <p>Follow us to stay updated on new features and privacy tips:</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/metastrip" target="_blank" rel="noopener noreferrer" class="social-link">Twitter</a>
+                        <a href="https://github.com/metastrip" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact-form-section">
+                <h2>Send a Message</h2>
+                <p>Please note that this form doesn't actually send emails yet. For now, please use the email addresses above.</p>
+                
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="feedback">Feedback</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="question">Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy" required>
+                            I have read and agree to the <a href="privacy.html">Privacy Policy</a>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </section>
+            
+            <section class="faq-link">
+                <h2>Common Questions</h2>
+                <p>Before contacting us, you might find answers to common questions on our homepage FAQ section:</p>
+                <a href="index.html#faq-section" class="cta-button">View FAQ</a>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>MetaStrip</h3>
+                    <p>Privacy-focused EXIF metadata viewer and remover</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <h4>Support Us</h4>
+                    <a href="https://buymeacoffee.com/takewadit2s?status=1" class="support-button" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MetaStrip. All rights reserved.</p>
+                <p>This tool processes all images locally in your browser. No data is ever uploaded to our servers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

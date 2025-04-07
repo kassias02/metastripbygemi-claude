@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'none'; script-src 'self' https://plausible.io; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; form-action 'none';">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Terms and conditions for using MetaStrip, the free online EXIF metadata viewer and remover tool.">
+    <meta name="keywords" content="terms, conditions, EXIF, metadata, privacy, legal">
+    
+    <title>Terms and Conditions | MetaStrip</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Analytics (Privacy-Focused) -->
+    <script async defer data-domain="metastrip.com" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">MetaStrip</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#tool">Tool</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="support-banner">
+            <a href="https://buymeacoffee.com/takewadit2s?status=1" target="_blank" rel="noopener noreferrer">+ Support this project →</a>
+        </div>
+    </header>
+
+    <main class="legal-page">
+        <div class="container">
+            <h1>Terms and Conditions</h1>
+            <p class="last-updated">Last updated: April 04, 2025</p>
+            
+            <section>
+                <h2>1. Introduction</h2>
+                <p>Welcome to MetaStrip ("we," "our," or "us"). By using our website located at <a href="https://www.metastrip.com">www.metastrip.com</a> (the "Service"), you agree to be bound by these Terms and Conditions (the "Terms").</p>
+                <p>Please read these Terms carefully before using our Service. If you disagree with any part of these Terms, you may not use our Service.</p>
+            </section>
+            
+            <section>
+                <h2>2. Service Description</h2>
+                <p>MetaStrip provides a browser-based tool that allows you to view and remove EXIF metadata from JPEG images. All image processing is performed locally within your web browser, and your images are never uploaded to our servers.</p>
+            </section>
+            
+            <section>
+                <h2>3. Intellectual Property Rights</h2>
+                <h3>3.1 Our Content</h3>
+                <p>The Service and its original content, features, and functionality are owned by MetaStrip and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+                
+                <h3>3.2 Your Content</h3>
+                <p>When you use our Service to process images, you retain all rights to your images. We do not claim ownership of any images processed through our Service.</p>
+            </section>
+            
+            <section>
+                <h2>4. User Conduct</h2>
+                <p>You agree to use the Service only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+                <ul>
+                    <li>Use the Service in any way that violates any applicable national or international law or regulation</li>
+                    <li>Use the Service to process or store any content that is illegal, harmful, threatening, abusive, harassing, defamatory, or otherwise objectionable</li>
+                    <li>Attempt to gain unauthorized access to our Service, computer systems, or networks</li>
+                    <li>Interfere with or disrupt the Service or servers or networks connected to the Service</li>
+                    <li>Use any robot, spider, or other automatic device or manual process to monitor or copy any material on our Service</li>
+                    <li>Introduce any viruses, Trojan horses, worms, logic bombs, or other harmful material to our Service</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>5. Disclaimer of Warranties</h2>
+                <p>The Service is provided on an "AS IS" and "AS AVAILABLE" basis, without warranties of any kind, either express or implied. To the fullest extent permitted by law, we disclaim all warranties, including but not limited to:</p>
+                <ul>
+                    <li>The completeness of metadata removal</li>
+                    <li>The accuracy of metadata displayed</li>
+                    <li>The Service meeting your specific requirements</li>
+                    <li>The uninterrupted or error-free operation of the Service</li>
+                    <li>The security or reliability of the Service</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>6. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by law, in no event shall MetaStrip, its directors, employees, partners, agents, suppliers, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+                <ul>
+                    <li>Your use of or inability to use the Service</li>
+                    <li>Any unauthorized access to or use of our servers and/or any personal information stored therein</li>
+                    <li>Any errors or omissions in the functionality or operation of the Service</li>
+                    <li>Any interruptions or cessation of transmission to or from the Service</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>7. Indemnification</h2>
+                <p>You agree to defend, indemnify, and hold harmless MetaStrip and its licensees, licensors, and service providers from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Service.</p>
+            </section>
+            
+            <section>
+                <h2>8. External Links</h2>
+                <p>Our Service may contain links to third-party websites or services that are not owned or controlled by MetaStrip. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services. We strongly advise you to read the terms and privacy policy of any third-party website you visit.</p>
+            </section>
+            
+            <section>
+                <h2>9. Termination</h2>
+                <p>We may terminate or suspend your access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms.</p>
+            </section>
+            
+            <section>
+                <h2>10. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law provisions.</p>
+            </section>
+            
+            <section>
+                <h2>11. Changes to Terms</h2>
+                <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will provide notice of any changes by posting the new Terms on this page.</p>
+                <p>Your continued use of the Service after any such changes constitutes your acceptance of the new Terms.</p>
+            </section>
+            
+            <section>
+                <h2>12. Contact Us</h2>
+                <p>If you have any questions about these Terms, please contact us at:</p>
+                <ul>
+                    <li>Email: <a href="mailto:support@metastrip.com">support@metastrip.com</a></li>
+                    <li><a href="contact.html">Contact Form</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>MetaStrip</h3>
+                    <p>Privacy-focused EXIF metadata viewer and remover</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <h4>Support Us</h4>
+                    <a href="https://buymeacoffee.com/takewadit2s?status=1" class="support-button" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MetaStrip. All rights reserved.</p>
+                <p>This tool processes all images locally in your browser. No data is ever uploaded to our servers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
